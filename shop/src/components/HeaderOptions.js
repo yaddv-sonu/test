@@ -32,7 +32,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white text-black p-4 flex justify-between items-center">
+    <header className="bg-white text-black  flex justify-between items-center">
       {/* Left side with location icon */}
       <div className="flex items-center">
         <span className="text-xl mr-2">
@@ -101,6 +101,10 @@ const Header = () => {
           </a>
         </div>
       </div>
+
+      
+
+      
     </header>
   );
 };

@@ -8,19 +8,24 @@ import FollowUsInstagram from "./components/FollowUsInstagram";
 import PromotionalBanner from "./components/PromotionalBanner";
 import SummerSaleBanner from "./components/SummerSaleBanner";
 import HeaderOptions from "./components/HeaderOptions";
+import Serach from "./components/Serach";
 
 function App() {
   return (
     <div>
-      <HeaderOptions />
+      <div className="mx-52 ">
+        <HeaderOptions />
+        <Serach />
+      </div>
+
       <Header />
-      <div className="mx-60">
-        <PromotionalBanner />
-        <PopularCategories />
-        <PopularProducts />
-        <SummerSaleBanner />
-        <FollowUsInstagram />
-        <Subscriber />
+     <div className="mx-52">
+      <PromotionalBanner />
+      <PopularCategories />
+      <PopularProducts />
+      <SummerSaleBanner />
+      <FollowUsInstagram />
+      <Subscriber />
       </div>
 
       <Footer />

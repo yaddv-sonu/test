@@ -16,11 +16,11 @@ const FollowUsInstagram = () => {
   const fruitVegetableImages = getRandomFruitVegetableImages(6);
 
   return (
-    <div className="mt-4 bg-white p-4 rounded-lg flex flex-col items-center border-2 m-2">
-      <h2 className="text-green-500 text-lg font-semibold mb-2">
+    <div className="mt-4 bg-white p-4 rounded-lg flex flex-col items-center  m-2">
+      <h2 className="text-black text-lg font-semibold mb-2">
         Follow Us on Instagram
       </h2>
-      <div className="flex items-center justify-center space-x-4">
+      <div className="flex items-center justify-center space-x-4 rounded-3xl">
         {fruitVegetableImages.map((imageUrl, index) => (
           <div key={index} className="w-24 h-24 overflow-hidden">
             <img

@@ -93,7 +93,7 @@ const PopularProducts = () => {
 
       <div className="grid gap-4">
         {rows.map((row, rowIndex) => (
-          <div key={rowIndex} className="grid grid-cols-5 gap-4">
+          <div key={rowIndex} className="grid grid-cols-5 ">
             {row.map((fruit, index) => (
               <div key={index} className="col-span-1">
                 <div className="product-container bg-white p-4 border-2">

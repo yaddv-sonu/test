@@ -17,14 +17,14 @@ const PromotionalBanner = () => {
       <div className="flex">
         {/* First section with background image */}
         <div
-          className="bg-cover bg-center py-48 text-white text-center w-2/3 relative"
+          className="bg-cover bg-center py-48 text-white text-center w-2/3 relative "
           style={{ backgroundImage: `url(${promotionalBannerImage})` }}
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
 
         {/* Second section with offer content */}
-        <div className="bg-white py-8 text-center w-1/2  flex-row">
+        <div className="bg-white py-8 text-center w-1/2   flex-row">
           {/* Left div with offer content */}
           <div className=" h-1/2 border-2">
             <h2 className="text-4xl font-bold mb-4">Limited Time Offer</h2>
@@ -44,7 +44,7 @@ const PromotionalBanner = () => {
       </div>
 
       {/* Third section horizontally aligned with the first two */}
-      <div className="bg-white py-16 text-center flex-1 border-2 m-2">
+      <div className="bg-white py-16 text-center flex-1 shadow-md m-2">
         <div className="flex justify-center space-x-8">
           <div>
             <FontAwesomeIcon
