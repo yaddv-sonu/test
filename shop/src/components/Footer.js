@@ -3,7 +3,16 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-black p-4 text-white text-center">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid  grid-cols-5 ">
+        {/* Logo Section */}
+        <div className="flex items-center justify-center md:col-span-1 lg:col-span-1">
+          <img
+            src={process.env.PUBLIC_URL + "/images/logo1.png "} // Replace with the actual path to your logo image
+            alt="Fruit Shop Logo"
+            className="h-24 w-auto"
+          />
+        </div>
+        {/* Links Sections */}
         <div>
           <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
           <ul className="list-none">

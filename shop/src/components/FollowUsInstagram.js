@@ -16,7 +16,7 @@ const FollowUsInstagram = () => {
   const fruitVegetableImages = getRandomFruitVegetableImages(6);
 
   return (
-    <div className="mt-4 bg-white p-4 rounded-lg flex flex-col items-center  m-2">
+    <div className="mt-4 bg-white p-4 rounded-3xl flex flex-col items-center  m-2">
       <h2 className="text-black text-lg font-semibold mb-2">
         Follow Us on Instagram
       </h2>
@@ -26,7 +26,7 @@ const FollowUsInstagram = () => {
             <img
               src={imageUrl}
               alt={`Instagram ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-md"
             />
           </div>
         ))}

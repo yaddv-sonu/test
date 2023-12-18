@@ -5,61 +5,61 @@ const PopularProducts = () => {
   const popularFruits = [
     {
       name: "Apple",
-      image: "https://source.unsplash.com/weekly?apple",
+      image: process.env.PUBLIC_URL + "/images/1.png",
       price: "$1.99",
       rating: 4.5,
     },
     {
       name: "Banana",
-      image: "https://source.unsplash.com/weekly?banana",
+      image: process.env.PUBLIC_URL + "/images/2.png",
       price: "$0.99",
       rating: 4.0,
     },
     {
       name: "Orange",
-      image: "https://source.unsplash.com/weekly?orange",
+      image: process.env.PUBLIC_URL + "/images/3.png",
       price: "$2.49",
       rating: 4.8,
     },
     {
       name: "Strawberry",
-      image: "https://source.unsplash.com/weekly?strawberry",
+      image: process.env.PUBLIC_URL + "/images/4.png",
       price: "$3.99",
       rating: 4.2,
     },
     {
       name: "Mango",
-      image: "https://source.unsplash.com/weekly?mango",
+      image: process.env.PUBLIC_URL + "/images/4.png",
       price: "$2.29",
       rating: 4.6,
     },
     {
       name: "Grapes",
-      image: "https://source.unsplash.com/weekly?grapes",
+      image: process.env.PUBLIC_URL + "/images/6.png",
       price: "$4.99",
       rating: 4.7,
     },
     {
       name: "Watermelon",
-      image: "https://source.unsplash.com/weekly?watermelon",
+      image: process.env.PUBLIC_URL + "/images/7.png ",
       price: "$5.99",
       rating: 4.9,
     },
     {
       name: "Pineapple",
-      image: "https://source.unsplash.com/weekly?pineapple",
+      image: process.env.PUBLIC_URL + "/images/8.png",
       price: "$2.99",
       rating: 4.4,
     },
     {
       name: "Kiwi",
-      image: "https://source.unsplash.com/weekly?kiwi",
+      image: process.env.PUBLIC_URL + "/images/9.png",
       price: "$1.49",
       rating: 4.3,
     },
     {
       name: "Peach",
-      image: "https://source.unsplash.com/weekly?peach",
+      image: process.env.PUBLIC_URL + "/images/10.png",
       price: "$3.49",
       rating: 4.1,
     },
@@ -78,7 +78,7 @@ const PopularProducts = () => {
       starIcons.push(
         <FaStar
           key={i}
-          className={i < rating ? "text-yellow-500" : "text-gray-300"}
+          className={i < rating ? "text-black-50" : "text-gray-300"}
         />
       );
     }
@@ -86,37 +86,37 @@ const PopularProducts = () => {
   };
 
   return (
-    <div className="mt-4">
+    <div className="mt-2">
       <h2 className="text-black text-3xl font-semibold mb-2">
         Popular Products
       </h2>
 
-      <div className="grid gap-4">
+      <div className="grid ">
         {rows.map((row, rowIndex) => (
           <div key={rowIndex} className="grid grid-cols-5 ">
             {row.map((fruit, index) => (
-              <div key={index} className="col-span-1">
-                <div className="product-container bg-white p-4 border-2">
+              <div key={index} className="">
+                <div className="product-container bg-white p-2 border-2">
                   <img
                     src={fruit.image}
                     alt={fruit.name}
-                    className="w-16 h-16 object-cover rounded-md mb-2"
+                    className="w-[150px] h-[200px]  rounded-md"
                   />
                   <div className="flex justify-between w-full">
                     <div className="text-left">
-                      <h3 className="text-green-500 text-lg font-semibold mb-1">
+                      <h3 className="text-black text-sm font-semibold mb-1">
                         {fruit.name}
                       </h3>
-                      <p className="text-gray-700">${fruit.price}</p>
+                      <p className="text-black">${fruit.price}</p>
                       <div className="flex items-center">
-                        <span className="text-yellow-500">{fruit.rating}</span>
+                        <span className="text-black">{fruit.rating}</span>
                         {renderStars(fruit.rating)}
                       </div>
                     </div>
                     <div className="flex items-center">
                       <a
                         href="#"
-                        className="text-green-500 block text-center bg-blue-200 p-2 rounded-md"
+                        className="text-white  text-center bg-gray-300 p-2 rounded-full"
                       >
                         <FaShoppingBag />
                       </a>

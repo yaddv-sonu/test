@@ -1,19 +1,16 @@
-import React from 'react'
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faShoppingCart,
-  
-} from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
-const Serach = () => {
+const Search = () => {
   return (
-    <div className='my-8'>
+    <div className="my-8">
       <div className="flex items-center justify-between">
         {/* Logo and Search Bar */}
         <div className="flex items-center space-x-96">
           {/* Replace the logo with orangemerat image */}
           <img
-            src="https://placekitten.com/50/50" // Replace this URL with the orangemerat image URL
+            src={process.env.PUBLIC_URL + "/images/logo.png"} // Replace this URL with the orangemerat image URL
             alt="Logo"
             className="w-10 h-10"
           />
@@ -26,7 +23,7 @@ const Serach = () => {
               placeholder="Search for fruits..."
               className="p-2 border border-white rounded"
             />
-            <button className="bg-yellow-600 text-white p-2  rounded">
+            <button className="bg-yellow-600 text-white p-2 rounded">
               Search
             </button>
           </div>
@@ -42,6 +39,6 @@ const Serach = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Serach
+export default Search;

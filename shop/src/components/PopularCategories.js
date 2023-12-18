@@ -38,7 +38,7 @@ const PopularCategories = () => {
                   <img
                     src={category.image}
                     alt={category.name}
-                    className="w-full h-20 object-cover rounded-md mb-2"
+                    className="w-full h-20 object-cover rounded-md mb-2 shadow-md"
                   />
                   <a href="#" className="block text-center p-2 rounded-md">
                     {category.name}
